@@ -100,3 +100,21 @@ USE [SchoolManagement_DB];
 
 --SELECT * FROM Classes
 --INNER JOIN Lecturers ON Classes.LecturerId = Lecturers.Id WHERE Lecturers.StaffId IS NOT NULL;
+
+--SELECT * FROM Classes c
+--INNER JOIN Lecturers l ON c.LecturerId = l.Id;
+
+--Left Join
+--SELECT * FROM Classes c
+--LEFT JOIN Lecturers l ON c.LecturerId = l.Id;
+
+--Right Join
+--SELECT * FROM Classes c
+--RIGHT JOIN Lecturers l ON c.LecturerId = l.Id;
+
+--Full Join
+--SELECT * FROM Classes c
+--FULL JOIN Lecturers l ON c.LecturerId = l.Id;
+
+--CROSS JOIN (Combitation of all records from both table)
+--SELECT * FROM Classes CROSS JOIN Lecturers
