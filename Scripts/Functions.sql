@@ -10,5 +10,7 @@ USE [SchoolManagement_DB]
 --SELECT [dbo].[fnc_GetStudentHigestGrade](3) AS [Student Highest Grade]
 
 --Inline Valued Function
-SELECT * FROM [dbo].[fnc_GetGradeRange](30,90);
+--SELECT * FROM [dbo].[fnc_GetGradeRange](30,90);
 
+--Multi Statement Table Valued Function
+SELECT * FROM [dbo].[fnc_GetAllSchoolPersons]();
