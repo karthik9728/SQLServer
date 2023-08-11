@@ -58,3 +58,32 @@ USE [SchoolManagement_DB]
 --Min(Grade) [Lowest Class Grade],
 --Max(Grade) [Higest Class Grade]
 --FROM Enrollments WHERE ClassId = 1;
+
+--SUM
+--SELECT * FROM Enrollments;
+--SELECT * FROM Classes;
+--SELECT * FROM Courses;
+
+--SELECT 
+--s.StudentId,
+--s.FirstName +' '+ s.LastName [Student Name],
+--AVG(e.Grade)[Average Grade],
+--SUM(co.Credits)[Number of Credits]
+--FROM Enrollments e
+--INNER JOIN Classes c ON c.Id = e.ClassId
+--INNER JOIN Courses co ON co.Id = c.CourseId
+--INNER JOIN Students s ON s.Id = e.StudentId
+--GROUP BY s.StudentId,s.FirstName,s.LastName;
+
+--Filter
+--SELECT 
+--s.StudentId,
+--s.FirstName +' '+ s.LastName [Student Name],
+--AVG(e.Grade)[Average Grade],
+--SUM(co.Credits)[Number of Credits]
+--FROM Enrollments e
+--INNER JOIN Classes c ON c.Id = e.ClassId
+--INNER JOIN Courses co ON co.Id = c.CourseId
+--INNER JOIN Students s ON s.Id = e.StudentId
+--GROUP BY s.StudentId,s.FirstName,s.LastName
+--HAVING SUM(co.Credits) > 3;
